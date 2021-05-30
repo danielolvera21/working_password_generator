@@ -8,6 +8,7 @@ var symbolArray = "!@#$%^&*+~?=/;:`".split("");
 var passwordArr = [];
 var promptPassword;
 
+//function to prompt user input
 function writePassword() {
   //ask how many characters the password will be
   promptPassword = window.prompt(
@@ -47,7 +48,7 @@ function writePassword() {
     writePassword();
   }
 }
-
+//function to generate random items for password
 function generatePass() {
   var randomPass = [];
   for (let i = 0; i < promptPassword; i++) {
@@ -57,7 +58,6 @@ function generatePass() {
   }
   var passwordText = document.querySelector("#password");
   passwordText.innerHTML = "Your new password is " + randomPass.join("");
-  //console.log(randomPass);
 }
 
 // Add event listener to generate button
