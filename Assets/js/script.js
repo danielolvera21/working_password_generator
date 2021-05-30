@@ -39,7 +39,9 @@ function writePassword() {
 
     //check to make sure at least one type of characters is chosen
     if (passwordArr.length === 0) {
-      window.alert("You need to choose at least one character");
+      window.alert(
+        "You must choose at least one type of character between lowercase, uppercase, numbers, and symbols. Please choose at least one."
+      );
     } else {
       generatePass();
     }
